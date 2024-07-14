@@ -15,9 +15,9 @@ import java.util.List;
 public class RolUsuario {
 
     @Id
-    private int rolUsuarioID;
+    private Integer rolUsuarioID;
     private String descripcion;
     @OneToMany(mappedBy = "rolUsuarioID")
     @JsonIgnore
-    private List<RolUsuario> rolUsuarios;
+    private List<Personal> rolUsuarios;
 }

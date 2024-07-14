@@ -16,4 +16,8 @@ public class ServicioTareaService {
     public List<ServicioTarea> listarServicioTareas(){
         return servicioTareaRepo.findAll();
     }
+
+    public ServicioTarea ingresarST(ServicioTarea st) {
+        return servicioTareaRepo.save(st);
+    }
 }

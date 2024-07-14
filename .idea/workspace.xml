@@ -4,27 +4,79 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="703a64d4-b42e-418d-b08c-e46ea5f83c11" name="Changes" comment="" />
+    <list default="true" id="3a13a332-67bf-41bb-a1a1-806d7bc3680b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Auth/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Auth/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Auth/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Auth/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Controlador/DistritoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Controlador/DistritoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Controlador/GradoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Controlador/GradoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Controlador/HorarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Controlador/HorarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Controlador/LocalidadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Controlador/LocalidadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Controlador/PersonalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Controlador/PersonalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Controlador/ServicioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Controlador/ServicioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Controlador/ServicioTareaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Controlador/ServicioTareaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Controlador/TareaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Controlador/TareaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Jwt/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Jwt/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Modelo/Distrito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Modelo/Distrito.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Modelo/Horario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Modelo/Horario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Modelo/Personal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Modelo/Personal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Modelo/RolUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Modelo/RolUsuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Modelo/Servicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Modelo/Servicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Modelo/ServicioTarea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Modelo/ServicioTarea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Modelo/Tarea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Modelo/Tarea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Repositorio/IHorarioRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Repositorio/IHorarioRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Repositorio/IPersonalRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Repositorio/IPersonalRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Repositorio/IServicioRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Repositorio/IServicioRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Servicio/HorarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Servicio/HorarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Servicio/PersonalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Servicio/PersonalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Servicio/ServicioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Servicio/ServicioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Servicio/ServicioTareaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Servicio/ServicioTareaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Servicio/TareaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/Servicio/TareaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/VigiControlApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/VigiControl/VigiControlApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Auth/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Auth/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Auth/AuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Auth/AuthService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Controlador/DistritoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Controlador/DistritoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Controlador/GradoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Controlador/GradoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Controlador/HorarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Controlador/HorarioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Controlador/LocalidadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Controlador/LocalidadController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Controlador/PersonalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Controlador/PersonalController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Controlador/ServicioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Controlador/ServicioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Controlador/ServicioTareaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Controlador/ServicioTareaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Controlador/TareaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Controlador/TareaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Jwt/JwtService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Jwt/JwtService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Modelo/Distrito.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Modelo/Distrito.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Modelo/Horario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Modelo/Horario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Modelo/Personal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Modelo/Personal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Modelo/RolUsuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Modelo/RolUsuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Modelo/Servicio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Modelo/Servicio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Modelo/ServicioTarea.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Modelo/ServicioTarea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Modelo/Tarea.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Modelo/Tarea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Repositorio/IHorarioRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Repositorio/IHorarioRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Repositorio/IPersonalRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Repositorio/IPersonalRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Repositorio/IServicioRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Repositorio/IServicioRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Servicio/HorarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Servicio/HorarioService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Servicio/PersonalService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Servicio/PersonalService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Servicio/ServicioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Servicio/ServicioService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Servicio/ServicioTareaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Servicio/ServicioTareaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Servicio/TareaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/Servicio/TareaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/VigiControl/VigiControlApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/VigiControl/VigiControlApplication.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Dockerfile" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/api/VigiControl/Controlador/AsignacionController.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/resources/application.properties" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -37,8 +89,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2QyyKM5JJIyzJJUpK72cP2ApSYd" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2jF8e0zcs5ciZivXLIAdJGKaCwl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,73 +98,47 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lucia/Desktop/VigiControl - Render&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;PLAIN_TEXT&quot;
-    ]
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lucia/Desktop/vigicontrol&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.api.VigiControl.Modelo" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\lucia\Desktop\VigiControl" />
-    </key>
-  </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="mvn clean install -X" />
-      <command value="mvn clean install" />
-      <command value="mvn clean" />
-    </option>
-  </component>
   <component name="RunManager">
-    <configuration name="VigiControlApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.api.VigiControl.VigiControlApplication" />
-      <module name="VigiControl" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.api.VigiControl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="VigiControl [spring-boot:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="spring-boot:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.VigiControlApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="703a64d4-b42e-418d-b08c-e46ea5f83c11" name="Changes" comment="" />
-      <created>1686340051811</created>
+      <changelist id="3a13a332-67bf-41bb-a1a1-806d7bc3680b" name="Changes" comment="" />
+      <created>1720971563580</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1686340051811</updated>
+      <updated>1720971563580</updated>
     </task>
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$" />
-    </ignored-roots>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/VigiControl$VigiControlApplication.ic" NAME="VigiControlApplication Coverage Results" MODIFIED="1686355658413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.api.VigiControl.*</FILTER>
-    </SUITE>
   </component>
 </project>

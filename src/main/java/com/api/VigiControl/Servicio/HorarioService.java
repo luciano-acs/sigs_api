@@ -16,4 +16,12 @@ public class HorarioService {
     public List<Horario> listarHorarios(){
         return horarioRepo.findAll();
     }
+
+    public Horario listarHorarioByID(int id) {
+        return horarioRepo.findById(id).get();
+    }
+
+    public Horario listarHorarioByNombre(String nombre) {
+        return horarioRepo.findByNombre(nombre);
+    }
 }

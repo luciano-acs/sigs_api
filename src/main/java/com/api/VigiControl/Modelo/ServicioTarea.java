@@ -1,61 +1,32 @@
 package com.api.VigiControl.Modelo;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.sql.Time;
+import java.time.LocalDate;
 import java.util.Date;
 
+@Data
 @Entity
+@AllArgsConstructor
+@Table(uniqueConstraints={
+        @UniqueConstraint(columnNames = {"servicioID"})
+})
 public class ServicioTarea {
 
     @Id
-    private int servicioTareaID;
-    private Date fecha;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int servicioTareaID = 0;
+    @Column(columnDefinition = "DATE")
+    private LocalDate fecha;
     private Time hora;
     @ManyToOne
     @JoinColumn(name = "servicioID")
-    private Servicio servivioID;
+    private Servicio servicioID;
     @ManyToOne
     @JoinColumn(name = "tareaID")
     private Tarea tareaID;
-
-    public int getServicioTareaID() {
-        return servicioTareaID;
-    }
-
-    public void setServicioTareaID(int servicioTareaID) {
-        this.servicioTareaID = servicioTareaID;
-    }
-
-    public Servicio getServivioID() {
-        return servivioID;
-    }
-
-    public void setServivioID(Servicio servivioID) {
-        this.servivioID = servivioID;
-    }
-
-    public Date getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(Date fecha) {
-        this.fecha = fecha;
-    }
-
-    public Time getHora() {
-        return hora;
-    }
-
-    public void setHora(Time hora) {
-        this.hora = hora;
-    }
-
-    public Tarea getTareaID() {
-        return tareaID;
-    }
-
-    public void setTareaID(Tarea tareaID) {
-        this.tareaID = tareaID;
-    }
 }

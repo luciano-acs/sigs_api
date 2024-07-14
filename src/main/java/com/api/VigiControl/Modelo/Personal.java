@@ -1,6 +1,6 @@
 package com.api.VigiControl.Modelo;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-
 import java.util.Collection;
 import java.util.List;
 
@@ -16,21 +15,24 @@ import java.util.List;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
 @Table(name="personal", uniqueConstraints = {@UniqueConstraint(columnNames = {"username"})})
 public class Personal implements UserDetails {
 
     @Id
     @Column(length = 8)
     private String personalID;
+    @Column(nullable = false)
     private String apeYnom;
     @Column(nullable = true)
-    private int cargo;
+    private Integer cargo;
+    @Column(nullable = false)
     private int visible;
     @ManyToOne
     @JoinColumn(name = "gradoID")
     private Grado gradoID;
     @ManyToOne
-    @JoinColumn(name = "comisariaID")
+    @JoinColumn(name = "comisariaID", nullable = true)
     private Comisaria comisariaID;
     @ManyToOne
     @JoinColumn(name = "domicilioID")
@@ -44,7 +46,9 @@ public class Personal implements UserDetails {
     @OneToMany(mappedBy = "servicioTareaID")
     @JsonIgnore
     private List<ServicioTarea> servicioTareaList;
+    @Column(nullable = false)
     private String username;
+    @Column(nullable = false)
     private String password;
 
     @Override

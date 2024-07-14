@@ -3,9 +3,11 @@ package com.api.VigiControl.Auth;
 import com.api.VigiControl.Jwt.JwtService;
 import com.api.VigiControl.Modelo.Personal;
 import com.api.VigiControl.Repositorio.IPersonalRepo;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
@@ -56,5 +58,9 @@ public class AuthService {
         authResponse.setToken(jwtService.getToken(personal));
 
         return authResponse;
+    }
+
+    public void logout(HttpServletRequest request) {
+        SecurityContextHolder.clearContext();
     }
 }

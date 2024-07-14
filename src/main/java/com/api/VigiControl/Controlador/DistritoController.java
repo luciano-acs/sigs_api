@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/distritos")
+
 public class DistritoController {
 
     @Autowired

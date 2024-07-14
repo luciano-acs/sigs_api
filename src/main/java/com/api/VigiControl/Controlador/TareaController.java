@@ -1,5 +1,6 @@
 package com.api.VigiControl.Controlador;
 
+import com.api.VigiControl.DTO.TareaDTO;
 import com.api.VigiControl.Modelo.Tarea;
 import com.api.VigiControl.Servicio.TareaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,7 @@ public class TareaController {
     private TareaService tareaService;
 
     @GetMapping("/listar")
-    public List<Tarea> listarTareas(){
+    public List<TareaDTO> listarTareas(){
         return tareaService.listarTareas();
     }
 
@@ -30,27 +31,27 @@ public class TareaController {
             return new ResponseEntity<Tarea>(HttpStatus.NOT_FOUND);
         }
     }
-
-    @PostMapping("/tarea")
-    public Tarea ingresarTarea(@RequestBody Tarea tarea){
-        return tareaService.ingresarTarea(tarea);
-    }
-
-    @PutMapping("/actualizar/{id}")
-    public ResponseEntity<?> actualizarTarea(@PathVariable String id, @RequestBody Tarea tarea){
-        try{
-            Tarea tareaModificacion = tareaService.buscarTarea(id);
-            tareaModificacion.setNombre(tarea.getNombre());
-
-            tareaService.ingresarTarea(tareaModificacion);
-            return new ResponseEntity<Tarea>(HttpStatus.OK);
-        }catch (Exception e){
-            return new ResponseEntity<Tarea>(HttpStatus.NOT_FOUND);
-        }
-    }
-
-    @DeleteMapping("/eliminar/{id}")
-    public void eliminarTarea(@PathVariable String id){
-        tareaService.eliminarTarea(id);
-    }
+//
+//    @PostMapping("/tarea")
+//    public Tarea ingresarTarea(@RequestBody Tarea tarea){
+//        return tareaService.ingresarTarea(tarea);
+//    }
+//
+//    @PutMapping("/actualizar/{id}")
+//    public ResponseEntity<?> actualizarTarea(@PathVariable String id, @RequestBody Tarea tarea){
+//        try{
+//            Tarea tareaModificacion = tareaService.buscarTarea(id);
+//            tareaModificacion.setNombre(tarea.getNombre());
+//
+//            tareaService.ingresarTarea(tareaModificacion);
+//            return new ResponseEntity<Tarea>(HttpStatus.OK);
+//        }catch (Exception e){
+//            return new ResponseEntity<Tarea>(HttpStatus.NOT_FOUND);
+//        }
+//    }
+//
+//    @DeleteMapping("/eliminar/{id}")
+//    public void eliminarTarea(@PathVariable String id){
+//        tareaService.eliminarTarea(id);
+//    }
 }

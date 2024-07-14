@@ -1,5 +1,4 @@
 package com.api.VigiControl.Config;
-
 import com.api.VigiControl.Jwt.JwtAuthenticationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -10,7 +9,6 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-
 @Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor
@@ -24,14 +22,17 @@ public class SecurityConfig {
 
         return http
                 .csrf(csrf -> csrf.disable())
+                .cors().and()
                 .authorizeHttpRequests(authRequest ->
                         authRequest
+                                .requestMatchers("/status").permitAll()
                                 .requestMatchers("/auth/**").permitAll()
                                 .anyRequest().authenticated()
-                        )
+                )
                 .sessionManagement(sessionManager ->
                         sessionManager
-                                .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                )
                 .authenticationProvider(authProvider)
                 .addFilterBefore(JwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
